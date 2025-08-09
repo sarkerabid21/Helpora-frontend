@@ -1,12 +1,85 @@
-# React + Vite
+# HELPORA – Volunteer Management Web App
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Live Link: https://job-portal-97a97.web.app/
 
-Currently, two official plugins are available:
+## 📌 Project Purpose
+HELPORA is a volunteer management platform that allows users to:
+- Create, update, and delete volunteer need posts.
+- Volunteer for other users' posts.
+- Manage their own posts and volunteer applications.
+It is built as a full-stack MERN app with Firebase Authentication and JWT security.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+---
 
-## Expanding the ESLint configuration
+## 🛠️ Technologies Used
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+### Frontend:
+- React.js
+- React Router DOM
+- Tailwind CSS + DaisyUI
+- Axios
+- React Hook Form
+- SweetAlert2
+- Framer Motion
+- React Icons
+- React Datepicker
+
+### Backend:
+- Node.js
+- Express.js
+- MongoDB (Mongoose)
+- JWT (jsonwebtoken, cookie-parser)
+- CORS
+- dotenv
+
+---
+
+## 🚀 Key Features
+
+- 🛡️ **JWT-Protected Routes**
+- 🔐 **Firebase Email & Google Authentication**
+- 📝 **Add/Update/Delete Volunteer Need Posts**
+- ✅ **Volunteer Request System with live counter update**
+- 🔍 **Search Functionality by Post Title**
+- 🔃 **Dynamic Page Titles**
+- 🌙 **Dark/Light Theme Toggle**
+- 📉 **Sorting by Upcoming Deadlines**
+- 🧾 **Toast & SweetAlert2 for notifications**
+- 📱 **Responsive Design for all devices**
+- 🛠️ **404 Not Found Page**
+- 🔄 **Spinner/Loader during data fetch**
+
+---
+##  Screenshot
+<p align="center">
+  <img  src="https://i.postimg.cc/fRm8tT2Y/Screenshot-2025-08-08-at-15-09-47-HELPORA.png" alt="Banner" width="100%">
+</p>
+
+## Dependencies
+```bash
+npm i lottie-react
+npm install aos --save
+npm install motion
+npm init -y
+npm i express cors dotenv mongodb
+npm install react-datepicker
+npm i react-fast-marquee
+npm i react-responsive-carousel
+npm install swiper
+npm i leaflet react-leaflet{for exact location map}
+```
+
+## 🧪 How to Run Locally
+
+### Prerequisites
+- Node.js and npm installed
+- MongoDB Atlas cluster
+- Firebase project
+
+### 1. Clone the Repositories
+```bash
+git clone https://github.com/your-username/tech-web.git
+cd tech-web
+npm run build
+
+
