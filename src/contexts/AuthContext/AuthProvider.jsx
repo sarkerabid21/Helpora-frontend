@@ -34,7 +34,7 @@ const AuthProvider = ({ children }) => {
         setUser(currentUser);
         if(currentUser?.email){
           const userData = {email: currentUser.email}
-          axios.post('https://volunteer-servers.vercel.app/jwt',userData,{
+          axios.post('https://volunteer-servers.vercel.appjwt',userData,{
             withCredentials: true
           }).then(res => {
             console.log( 'token after jwt',res.data)

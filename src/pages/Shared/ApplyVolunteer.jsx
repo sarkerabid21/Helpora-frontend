@@ -11,7 +11,7 @@ const ApplyVolunteer = () => {
   const [suggestion, setSuggestion] = useState('');
 
   useEffect(() => {
-    fetch(`https://volunteer-servers.vercel.app/volunteer/volunteer-posts/${id}`)
+    fetch(`https://volunteer-servers.vercel.appvolunteer/volunteer-posts/${id}`)
       .then(res => res.json())
       .then(data => setPost(data));
   }, [id]);
@@ -44,7 +44,7 @@ const ApplyVolunteer = () => {
 
   try {
     
-    const res = await fetch('https://volunteer-servers.vercel.app/volunteer/volunteer-requests', {
+    const res = await fetch('https://volunteer-servers.vercel.appvolunteer/volunteer-requests', {
       method: 'POST',
       headers: { 'Content-Type': 'application/json' },
       body: JSON.stringify(volunteerData)
@@ -54,7 +54,7 @@ const ApplyVolunteer = () => {
 
     if (result.success) {
      
-      await fetch(`https://volunteer-servers.vercel.app/volunteer/volunteer-posts/${id}`, {
+      await fetch(`https://volunteer-servers.vercel.appvolunteer/volunteer-posts/${id}`, {
         method: 'PATCH',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({ type: 'decrement' })

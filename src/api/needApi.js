@@ -1,3 +1,3 @@
 export const myNeedsPromise = email => {
-    return fetch(`https://volunteer-servers.vercel.app/volunteer?email=${email}`).then(res =>res.json())
+    return fetch(`https://volunteer-servers.vercel.appvolunteer?email=${email}`).then(res =>res.json())
 }

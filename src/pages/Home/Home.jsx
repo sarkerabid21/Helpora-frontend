@@ -6,8 +6,10 @@ import Companies from './Companies';
 
 const Home = () => {
 
-    const volunterPromise = fetch('https://volunteer-servers.vercel.app/volunteer')
+    const volunterPromise = fetch('https://volunteer-servers.vercel.appvolunteer')
     .then(res => res.json())
+    // const volunterPromise = fetch('https://volunteer-servers.vercel.appvolunteer')
+    // .then(res => res.json())
 
     return (
         <div className="bg-cover  bg-center bg-fixed"

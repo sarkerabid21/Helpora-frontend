@@ -27,7 +27,7 @@ post.status = "active"
     console.log(post);
 
    
-    axios.post('https://volunteer-servers.vercel.app/volunteer', post)
+    axios.post('https://volunteer-servers.vercel.appvolunteer', post)
     .then(res => {
        if(res.data.insertedId){
        Swal.fire({
