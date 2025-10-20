@@ -6,9 +6,9 @@ import Companies from './Companies';
 
 const Home = () => {
 
-    const volunterPromise = fetch('https://volunteer-servers.vercel.appvolunteer')
+    const volunterPromise = fetch('https://volunteer-server-blush.vercel.appvolunteer')
     .then(res => res.json())
-    // const volunterPromise = fetch('https://volunteer-servers.vercel.appvolunteer')
+    // const volunterPromise = fetch('https://volunteer-server-blush.vercel.appvolunteer')
     // .then(res => res.json())
 
     return (

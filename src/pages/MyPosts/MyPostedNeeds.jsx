@@ -17,7 +17,7 @@ const MyPostedNeeds = ({ myNeedsPromise }) => {
 
     if (result.isConfirmed) {
       try {
-        const res = await fetch(`https://volunteer-servers.vercel.appvolunteer/${id}`, {
+        const res = await fetch(`https://volunteer-server-blush.vercel.appvolunteer/${id}`, {
           method: 'DELETE'
         });
         const data = await res.json();
